@@ -1,0 +1,37 @@
+{
+  "name": "mysql-stored-procedures",
+  "version": "1.0.0",
+  "description": "A Node.js module that can create and call stored procedures",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive tests",
+    "e2e": "node tests/e2e/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eenewbsauce/mysql-stored-procedures.git"
+  },
+  "keywords": [
+    "mysql",
+    "stored procedures"
+  ],
+  "author": "eenewbsauce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eenewbsauce/mysql-stored-procedures/issues"
+  },
+  "homepage": "https://github.com/eenewbsauce/mysql-stored-procedures#readme",
+  "dependencies": {
+    "anyargs": "^1.0.5",
+    "async": "^2.4.0",
+    "mysql": "^2.13.0",
+    "ramda": "^0.23.0",
+    "sync-async-ctor": "^1.0.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "sinon": "^2.2.0"
+  }
+}
