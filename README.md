@@ -22,11 +22,7 @@ Creating Stored Procedures
 const StoredProcedures = require('mysql-stored-procedures');
 const sps = new StoredProcedures();
 
-sps.create({
-
-}, (err) => {
-
-})
+sps.create('stored-procedure.sql', cb);
 ```
 
 Calling Stored Procedures
@@ -36,9 +32,12 @@ const StoredProcedures = require('mysql-stored-procedures');
 const sps = new StoredProcedures();
 
 sps.callWithParams({
-
+  clientId: 123
 }, (err, data) => {
-
+  console.dir(data);
+  // [{
+  //   123, 'brad', 'pitt'
+  // }]
 })
 ```
 
