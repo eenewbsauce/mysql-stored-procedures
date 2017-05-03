@@ -1,6 +1,6 @@
 {
   "name": "mysql-stored-procedures",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node.js module that can create and call stored procedures",
   "main": "index.js",
   "scripts": {
